@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-y: -11%;
+    font-family: 'Manrope';
+    font-style: normal;
+}
+
+header {
+    margin-top: 57px;
+    margin-left: 31px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    height: 150px;
+    background-image: url(./images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    background-size: 150px, 145px;
+}
+
+.headline {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #293356
+}
+
+.headerParagraph {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    color: #848EAD;
+    width: 180px;
+}
+
+.centered-box-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    /* margin-left: 24px;
+    margin-right: 24px; */
+    margin-bottom: 88px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    height: 478px;
+    width: 327px;
+}
+
+.highText {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #848EAD;
+}
+
+.views {
+    margin-top: 34px;
+}
+
+.monthOrYear {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.costAmount {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 89px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.usdNumber {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+    margin-right: 10px;
+    ;
+}
+
+.texts {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+}
+
+.MandP {
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.choseMonthlyOrYear {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggler-wrapper {
+    display: block;
+    width: 43px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggler-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+    background-color: #7AEADF;
+}
+
+.toggler-wrapper .toggler-slider {
+    background-color: #CFD8EF;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+    position: absolute;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+    left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+    width: calc(25px - 8px);
+    height: calc(25px - 8px);
+    border-radius: 50%;
+    left: 3.5px;
+    top: 2px;
+    background-color: #fff;
+}
+
+.choseMorY {
+    margin-right: 12px;
+}
+
+.DisText {
+    margin-left: 12px;
+}
+
+.perCent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 19px;
+    width: 41px;
+    border-radius: 9.5px;
+    background: #FEEDE8;
+    margin-left: 5.5px;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #FF8D68;
+}
+
+hr {
+    height: 1px;
+    border: 0px;
+    background: #ECF0FB;
+    margin-bottom: 24px;
+}
+
+.offersPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 11px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.check {
+    height: 5.041746616363525px;
+    width: 6.949103355407715px;
+    margin-right: 16.5px;
+}
+
+.startButton {
+    height: 41px;
+    width: 170px;
+    border-radius: 20.5px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+    background: #293356;
+    cursor: pointer;
+    border: 0px;
+}
+
+.startButton:hover {
+    color: #FFFFFF;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 279px;
+    height: 8px;
+    background: #ECF0FB;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #10d8c4;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url(../images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #7AEADF;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    background-image: url(../images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.slideEffect {
+    width: 130px;
+    height: 8px;
+    background: #a4f3eb;
+    border-radius: 5px;
+    transform: translate(-73.5px, -32px);
+}
+

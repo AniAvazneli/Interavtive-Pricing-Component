@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Pricing Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="icon" href="./images/favicon-32x32.png" />
+</head>
+
+<body>
+    <header class="centered-box-column">
+        <h1 class="headline">Simple, traffic-based pricing</h1>
+        <p class="headerParagraph">Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <main>
+        <div class="pagevievsAndAmount centered-box-column">
+            <div class="views">
+                <p class="numberOfViews"></p>
+                <p class="thousand highText">100K PAGEVIEWS</p>
+            </div>
+            <input oninput="handleInput(this)" id="rangeValue" type="range" min="1" max="32"  value="16"
+                class="slider" />
+            <div class="slideEffect"></div>
+            <div class="costAmount">
+                <p class="monthOrYear highText"><span class="usdNumber">$16.00</span>/month</p>
+            </div>
+        </div>
+        <div class="MandP">
+            <div class="choseMonthlyOrYear">
+                <p class="choseMorY texts">Monthly Billing</p>
+                <label class="toggler-wrapper style-1">
+                    <input type="checkbox">
+                    <div class="toggler-slider">
+                        <div class="toggler-knob"></div>
+                    </div>
+                </label>
+            </div>
+            <div class="discount">
+                <p class="texts DisText">Yearly Billing</p>
+                <div class="perCent">
+                    <p class="NumberOfDiscount">-25%</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="secPart">
+            <div class="offersPart">
+                <div class="offer">
+                    <img class="check" src="./images/icon-check.svg" />
+                    <p class="checkText texts">Unlimited websites</p>
+                </div>
+                <div class="offer">
+                    <img class="check" src="./images/icon-check.svg" />
+                    <p class="checkText texts ">100% data ownership</p>
+                </div>
+                <div class="offer">
+                    <img class="check" src="./images/icon-check.svg" />
+                    <p class="checkText texts">Email reports</p>
+                </div>
+            </div>
+            <button class="startButton">Start my trial</button>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
