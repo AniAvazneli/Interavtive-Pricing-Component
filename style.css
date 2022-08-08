@@ -274,7 +274,8 @@ hr {
     border-radius: 5px;
     outline: none;
     margin-top: 25px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+    /* z-index: 2; */
 }
 
 .slider::-webkit-slider-thumb {
@@ -288,6 +289,8 @@ hr {
     background-image: url(../images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position: 50%;
+    position: relative;
+    z-index: 2;
 }
 
 .slider::-webkit-slider-thumb:hover {
@@ -298,11 +301,15 @@ hr {
     background-position: 50%;
 }
 
-.slideEffect {
-    width: 130px;
+#slideEffect {
+    width: 50%;
     height: 8px;
     background: #a4f3eb;
     border-radius: 5px;
-    transform: translate(-73.5px, -32px);
+    transform: translateY(-470%);
+}
+.sliders{
+    padding-left: 24px;
+    padding-right: 24px;
 }
 

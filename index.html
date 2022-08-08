@@ -17,20 +17,22 @@
         <div class="pagevievsAndAmount centered-box-column">
             <div class="views">
                 <p class="numberOfViews"></p>
-                <p class="thousand highText">100K PAGEVIEWS</p>
+                <p id="pageviews" min="150" max="1000" class="thousand highText">100K PAGEVIEWS</p>
             </div>
-            <input oninput="handleInput(this)" id="rangeValue" type="range" min="1" max="32"  value="16"
+            <div class="sliders">
+            <input id="rangeValue" type="range" min="1" max="32"  value="16"
                 class="slider" />
-            <div class="slideEffect"></div>
+            <div id="slideEffect"></div>
+        </div>
             <div class="costAmount">
-                <p class="monthOrYear highText"><span class="usdNumber">$16.00</span>/month</p>
+                <p class="monthOrYear highText"><span id="costAmount" class="usdNumber">$16.00</span>/month</p>
             </div>
         </div>
         <div class="MandP">
             <div class="choseMonthlyOrYear">
                 <p class="choseMorY texts">Monthly Billing</p>
                 <label class="toggler-wrapper style-1">
-                    <input type="checkbox">
+                    <input id="monthYear" type="checkbox">
                     <div class="toggler-slider">
                         <div class="toggler-knob"></div>
                     </div>
