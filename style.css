@@ -323,6 +323,8 @@ hr {
     .headerParagraph {
         font-size: 15px;
         line-height: 20px;
+        height: 20px;
+        width: 367px;
     }
 
     main {
@@ -330,4 +332,52 @@ hr {
         width: 540px;
     }
 
+    .pagevievsAndAmount {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sliders {
+        width: 444px;
+        transform: translate(0%, 160%);
+    }
+
+    .views {
+        display: flex;
+        flex-direction: row;
+        transform: translate(110%, 40%);
+    }
+
+    #pageviews {
+        display: inline;
+        flex-direction: row;
+        height: 19px;
+        width: 144px;
+    }
+
+    .costAmount {
+        transform: translate(-90%, 40%);
+    }
+
+    .slider {
+        width: 444px;
+    }
+
+    .MandP {
+        transform: translate(10%, 360%);
+    }
+
+    .secPart {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 44px;
+        margin-left: 48px;
+    }
+
+    hr{
+        margin-top: 120px;
+    }
 }
